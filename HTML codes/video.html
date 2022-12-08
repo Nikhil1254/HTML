@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        #site iframe {
+            width: 100%;
+            height: 500px;
+        }
+
+        #site{
+            overflow-y: scroll;
+        }
+
+        video{
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- embedding youtube videos -->
+        <!-- we can open any site or any your inside your site using iframe -->
+        <mark>Embedding youtube video - iframe</mark>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-JrHsFHuD0U"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <hr>
+        <!-- embedding sites -->
+        <mark>Embedding other sites - iframe</mark>
+        <div id="site">
+            <iframe src="https://bing.com" frameborder="0"></iframe>
+        </div>
+        <hr>
+        <!-- embedding videos in your folders -->
+        <mark>Embedding videos in directory - video tag</mark>
+        <div>
+            <video src="media/vid.mp4" controls muted></video>
+        </div>
+        <hr>
+        <a href="https://geeksforgeeks.com" target="_top">geeksforgeeks</a>
+    </main>
+</body>
+
+</html>

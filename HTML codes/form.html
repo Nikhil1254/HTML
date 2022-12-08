@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        label {
+            margin-bottom: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="form.php ">
+            <!-- text input -->
+            <label for="MyName">Enter your name</label>&nbsp;
+            <input type="text" id="MyName" placeholder="Enter your name" name="name">
+            <hr>
+            <!-- password input -->
+            <label for="pin">Enter password</label>&nbsp;
+            <input id="pin" type="password" name="pass" placeholder="Password">
+            <hr>
+            <!-- date input -->
+            <label for="date">Select date</label>&nbsp;
+            <input id="date" type="date">
+            <hr>
+            <!-- color input -->
+            <label for="color">Choose color</label>&nbsp;
+            <input type="color" id="color" name="MyColor" value="pink">
+            <hr>
+            <!-- radio buttons , selecting any one-->
+            <h3>Select car</h3>
+            <input type="radio" id="options" value="BMW" name="radioOptions">
+            <label for="options">BMW</label><br>
+            <input type="radio" id="options" value="Mercedize" name="radioOptions">
+            <label for="options">Mercedize</label><br>
+            <input type="radio" id="options" value="Swift" name="radioOptions">
+            <label for="options">Swift</label><br>
+            <input type="radio" id="options" value="Honda city" name="radioOptions">
+            <label for="options">Honda city</label><br>
+            <hr>
+            <!-- checkbox -->
+            <h3>Select Your favourite subject</h3>
+            <input id="math" type="checkbox" name="subject1">
+            <label for="math">Math</label><br>
+            <input id="science" type="checkbox" name="subject2">
+            <label for="science">Science</label><br>
+            <input id="history" type="checkbox" name="subject3">
+            <label for="history">History</label><br>
+            <hr>
+            <!-- select tag -->
+            <select name="cars" id="cars">
+                <option value="no car">Select car</option>
+                <option value="Swift">Swift</option>
+                <option value="Hoonda city">Honda city</option>
+                <option value="Baleno">Baleno</option>
+                <option value="Bollero">Bollero</option>
+            </select>
+            <hr>
+            <!--------------------------------------------------------- textarea tag -->
+            <textarea name="review" id="userReview" cols="30" rows="10" placeholder="Provide your review"></textarea>
+        </form>
+    </div>
+</body>
+
+</html>

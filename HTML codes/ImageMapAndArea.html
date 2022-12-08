@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img{
+            border: 2px solid black;
+            margin: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- we will see how to make perticular area of image clicable and do something on that -->
+    <!-- we can also execute some js by using onclick attribute on area tag -->
+    <main>
+        <div>
+            <strong><em>If You Click On Me not on white part , You will go to Linkedin</em></strong><br>
+            <img src="media/Nikhil_passport.jpg" usemap="#image-map" alt="Passport Size Photo">
+
+            <map name="image-map">
+                <!-- we can use more than one area tags to define multiple areas -->
+                <area target="_blank" alt="Go To Linkedin" title="Go To Linkedin"
+                    href="https://www.linkedin.com/in/nikhil-patil-759377180"
+                    coords="412,410,412,389,411,370,403,345,385,323,351,304,309,283,269,262,261,240,252,227,260,211,263,199,277,192,281,176,285,153,285,131,297,107,281,71,265,48,242,33,222,28,190,25,178,27,167,41,143,47,119,59,107,75,103,97,111,122,116,150,122,177,133,200,147,217,151,234,147,254,126,270,106,282,84,298,62,314,48,327,29,342,15,355,4,370,2,389,0,411"
+                    shape="poly">
+            </map>
+        </div>
+    </main>
+</body>
+
+</html>
