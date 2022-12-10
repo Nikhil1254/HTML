@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #buttons {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- we will try to manipulate video using javascript  -->
+    <main>
+        <div id="buttons">
+            <button onclick="playPause()">Play/Pause</button>
+            <button onclick="muteUnmute()">Mute/Unmute</button>
+            <button onclick="makeBig()">Big</button>
+            <button onclick="makeSmall()">Small</button>
+            <button onclick="makeNormal()">Normal</button>
+        </div>
+        <video id="myvideo" src="media/vid.mp4" width="420px">Your Browser Don't support this video.</video>
+    </main>
+
+
+    <!-- my script -->
+    <script>
+        let video = document.getElementById("myvideo");
+
+        function playPause() {
+            if (video.paused)
+                video.play();
+            else
+                video.pause();
+        }
+
+        function muteUnmute() {
+            video.muted = !video.muted;
+        }
+
+        function makeBig() {
+            video.width = 520;
+        }
+
+        function makeSmall() {
+            video.width = 320;
+        }
+
+        function makeNormal() {
+            video.width = 420;
+        }
+    </script>
+</body>
+
+</html>
